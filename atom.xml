@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ksdev</title>
+  
+  <subtitle>Kangsan&#39;s Dev log</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://kangsanChang.github.io/"/>
+  <updated>2017-09-18T05:22:24.000Z</updated>
+  <id>http://kangsanChang.github.io/</id>
+  
+  <author>
+    <name>kangsan Chang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo server 실행 시 DTraceProviderBindings 찾을 수 없는 경우</title>
+    <link href="http://kangsanChang.github.io/2017/09/18/hexo-server-error/"/>
+    <id>http://kangsanChang.github.io/2017/09/18/hexo-server-error/</id>
+    <published>2017-09-18T04:29:32.000Z</published>
+    <updated>2017-09-18T05:22:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://hexo.io/ko/docs/index.html" target="_blank" rel="external">hexo</a> 로 블로그 시작한 후 첫 포스팅이다. 왜냐하면 내가 이걸로 고생했기 때문.</p><p>설치는 다른 블로그를 보고 잘 따라 했으나 <code>$ hexo server</code> 만 하면 아래와 같이 에러가 발생하였다.</p><img src="/2017/09/18/hexo-server-error/DTrace-error.png" alt="DTrace-Error" title="DTrace-Error"><p>이 경우 검색해보면 hexo 를 -g –no-optional 을 주고 재설치하는 방법이 올라와 있었지만, 내 문제는 해결되지 않았고 다른 방법들도 많이 따라 해 봤지만, 다 실패하고 결국 node를 깔끔하게 삭제하고 설치하는 방법 밖에 없었다. (<a href="https://github.com/hexojs/hexo/issues/2256#issuecomment-274047861" target="_blank" rel="external">참고</a>)</p><h3 id="OSX-기준으로-nodejs-완전히-삭제하는-방법"><a href="#OSX-기준으로-nodejs-완전히-삭제하는-방법" class="headerlink" title="OSX 기준으로 nodejs 완전히 삭제하는 방법"></a>OSX 기준으로 nodejs 완전히 삭제하는 방법</h3><script src="//gist.github.com/5d8c09310156b3a37c968b2f6d3a1e79.js"></script><h3 id="NVM-Node-Version-Manager-설치"><a href="#NVM-Node-Version-Manager-설치" class="headerlink" title="NVM (Node Version Manager) 설치"></a>NVM (Node Version Manager) 설치</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash</div></pre></td></tr></table></figure><p>또는<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash</div></pre></td></tr></table></figure></p><h3 id="Node-설치-후"><a href="#Node-설치-후" class="headerlink" title="Node 설치 후"></a>Node 설치 후</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ nvm install node</div><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure><h3 id="성공"><a href="#성공" class="headerlink" title="성공!"></a>성공!</h3><p>hexo 를 통해 블로그 생성 후  <code>$ hexo server</code> 해보면 아래와 같이 잘 나온다.</p><img src="/2017/09/18/hexo-server-error/good-hexo.png" alt="Good-Hexo" title="Good-Hexo"><h3 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h3><p>Hexo 설정 시 도움 많이 된 블로그</p><p><a href="http://futurecreator.github.io/categories/Web/Hexo/" target="_blank" rel="external">http://futurecreator.github.io/categories/Web/Hexo/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://hexo.io/ko/docs/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo&lt;/a&gt; 로 블로그 시작한 후 첫 포스팅이다. 왜냐하면 내가 이걸로 고생했기 때문.&lt;/p&gt;
+&lt;p&gt;설치는
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://kangsanChang.github.io/tags/Hexo/"/>
+    
+      <category term="Error" scheme="http://kangsanChang.github.io/tags/Error/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://kangsanChang.github.io/2017/09/15/hello-world/"/>
+    <id>http://kangsanChang.github.io/2017/09/15/hello-world/</id>
+    <published>2017-09-15T01:41:16.000Z</published>
+    <updated>2017-09-15T01:41:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
