@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kangsanChang.github.io/"/>
-  <updated>2017-09-18T05:22:24.000Z</updated>
+  <updated>2017-11-14T01:22:09.000Z</updated>
   <id>http://kangsanChang.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>p-tag-new-line</title>
+    <link href="http://kangsanChang.github.io/2017/11/14/p-tag-new-line/"/>
+    <id>http://kangsanChang.github.io/2017/11/14/p-tag-new-line/</id>
+    <published>2017-11-14T01:22:09.000Z</published>
+    <updated>2017-11-14T01:22:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="P-태그의-공백-다루기"><a href="#P-태그의-공백-다루기" class="headerlink" title="P 태그의 공백 다루기"></a>P 태그의 공백 다루기</h1><p><code>&lt;p&gt;</code> tag 를 사용하다보면, 개행이나 탭 사용 시 원하는대로 문자가 안 들어간다.</p><p><code>&lt;pre&gt;</code> tag 를 이용하면 탭이나 개행을 그대로 출력해주긴 하지만, 엘리먼트의 크기에 맞춰서 글씨가 자동으로 개행되지(text wrapping) 않는다. 글씨 길이 그대로 출력한다.</p><p>위와 같이 문자열의 개행, 탭, text wrapping 같은 것을 다루는 속성이 white-space 이다.</p><p>내가 원하는 모양으로 출력하기 위해선 개행도 잘 먹고 해당 엘리먼트 크기에 글씨의 길이가 자동으로 맞춰져서 개행(text wrapping)하는 것이었는데 <code>pre-wrap</code> 을 사용하면 됐다.</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// css 사용하는 예</span></div><div class="line"><span class="selector-tag">p</span> &#123;</div><div class="line"><span class="attribute">white-space</span>: pre-wrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>이런식으로 사용하면 된다.</p><p>개행/ 공백, tab / text wrapping</p><p>에 따라 다양한 white-space 속성을 사용할 수 있다. 아래에서 확인하자</p><p>Refs: <a href="https://developer.mozilla.org/ko/docs/Web/CSS/white-space" target="_blank" rel="external">https://developer.mozilla.org/ko/docs/Web/CSS/white-space</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;P-태그의-공백-다루기&quot;&gt;&lt;a href=&quot;#P-태그의-공백-다루기&quot; class=&quot;headerlink&quot; title=&quot;P 태그의 공백 다루기&quot;&gt;&lt;/a&gt;P 태그의 공백 다루기&lt;/h1&gt;&lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag 를 사
+      
+    
+    </summary>
+    
+    
+      <category term="HTML" scheme="http://kangsanChang.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo server 실행 시 DTraceProviderBindings 찾을 수 없는 경우</title>
     <link href="http://kangsanChang.github.io/2017/09/18/hexo-server-error/"/>
     <id>http://kangsanChang.github.io/2017/09/18/hexo-server-error/</id>
     <published>2017-09-18T04:29:32.000Z</published>
-    <updated>2017-09-18T05:22:24.000Z</updated>
+    <updated>2017-11-14T01:04:26.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://hexo.io/ko/docs/index.html" target="_blank" rel="external">hexo</a> 로 블로그 시작한 후 첫 포스팅이다. 왜냐하면 내가 이걸로 고생했기 때문.</p><p>설치는 다른 블로그를 보고 잘 따라 했으나 <code>$ hexo server</code> 만 하면 아래와 같이 에러가 발생하였다.</p><img src="/2017/09/18/hexo-server-error/DTrace-error.png" alt="DTrace-Error" title="DTrace-Error"><p>이 경우 검색해보면 hexo 를 -g –no-optional 을 주고 재설치하는 방법이 올라와 있었지만, 내 문제는 해결되지 않았고 다른 방법들도 많이 따라 해 봤지만, 다 실패하고 결국 node를 깔끔하게 삭제하고 설치하는 방법 밖에 없었다. (<a href="https://github.com/hexojs/hexo/issues/2256#issuecomment-274047861" target="_blank" rel="external">참고</a>)</p><h3 id="OSX-기준으로-nodejs-완전히-삭제하는-방법"><a href="#OSX-기준으로-nodejs-완전히-삭제하는-방법" class="headerlink" title="OSX 기준으로 nodejs 완전히 삭제하는 방법"></a>OSX 기준으로 nodejs 완전히 삭제하는 방법</h3><script src="//gist.github.com/5d8c09310156b3a37c968b2f6d3a1e79.js"></script><h3 id="NVM-Node-Version-Manager-설치"><a href="#NVM-Node-Version-Manager-설치" class="headerlink" title="NVM (Node Version Manager) 설치"></a>NVM (Node Version Manager) 설치</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash</div></pre></td></tr></table></figure><p>또는<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash</div></pre></td></tr></table></figure></p><h3 id="Node-설치-후"><a href="#Node-설치-후" class="headerlink" title="Node 설치 후"></a>Node 설치 후</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ nvm install node</div><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure><h3 id="성공"><a href="#성공" class="headerlink" title="성공!"></a>성공!</h3><p>hexo 를 통해 블로그 생성 후  <code>$ hexo server</code> 해보면 아래와 같이 잘 나온다.</p><img src="/2017/09/18/hexo-server-error/good-hexo.png" alt="Good-Hexo" title="Good-Hexo"><h3 id="참고"><a href="#참고" class="headerlink" title="참고"></a>참고</h3><p>Hexo 설정 시 도움 많이 된 블로그</p><p><a href="http://futurecreator.github.io/categories/Web/Hexo/" target="_blank" rel="external">http://futurecreator.github.io/categories/Web/Hexo/</a></p>]]></content>
     
