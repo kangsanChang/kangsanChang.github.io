@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kangsanChang.github.io/"/>
-  <updated>2017-11-17T00:25:46.000Z</updated>
+  <updated>2017-11-17T00:55:48.000Z</updated>
   <id>http://kangsanChang.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>p 태그의 공백 다루기</title>
+    <link href="http://kangsanChang.github.io/2017/11/17/p-tag-white-space/"/>
+    <id>http://kangsanChang.github.io/2017/11/17/p-tag-white-space/</id>
+    <published>2017-11-17T00:48:06.000Z</published>
+    <updated>2017-11-17T00:55:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>&lt;p&gt;</code> 태그를 사용하다보면, 개행이나 탭 사용 시 원하는대로 문자가 안 들어간다.</p><p><code>&lt;pre&gt;</code>를 이용하면 탭이나 개행을 그대로 출력해주긴 하지만, 엘리먼트의 크기에 맞춰서 글씨가 자동으로 개행되지(text wrapping) 않는다. 글씨 길이 그대로 출력한다.</p><p><code>&lt;p&gt;</code> 태그 내부의 문자열의 개행, 탭, text wrapping 같은 것을 다루는 속성이 <code>white-space</code> 이다.</p><p>내가 원하는 모양으로 출력하기 위해선 문자열의 개행도 잘 되고, 해당 엘리먼트 크기에 글씨의 길이가 자동으로 맞춰져서 개행하는 것이었는데 <code>pre-wrap</code> 을 사용하면 됐다.</p><p>css 먹이는 곳에서<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">    white-space: pre-wrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p><p>이런식으로 사용하면 된다.</p><p>개행/ 공백, tab / text wrapping 에 따라 다양한 white-space 속성을 사용할 수 있다. </p><img src="/2017/11/17/p-tag-white-space/white-spaces.png" alt="White-Space" title="White-Space"><p>자세한 내용은 아래에서 확인하자</p><p>Refs:<br><a href="https://developer.mozilla.org/ko/docs/Web/CSS/white-space" target="_blank" rel="external">https://developer.mozilla.org/ko/docs/Web/CSS/white-space</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; 태그를 사용하다보면, 개행이나 탭 사용 시 원하는대로 문자가 안 들어간다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;를 이용하면 탭이나 개행을 그대로 출력해주긴 하지만, 엘리먼트의 크기에 맞
+      
+    
+    </summary>
+    
+    
+      <category term="HTML, CSS" scheme="http://kangsanChang.github.io/tags/HTML-CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo 간단 사용법</title>
     <link href="http://kangsanChang.github.io/2017/11/17/hexo-simple-start/"/>
     <id>http://kangsanChang.github.io/2017/11/17/hexo-simple-start/</id>
     <published>2017-11-17T00:25:46.000Z</published>
-    <updated>2017-11-17T00:25:46.000Z</updated>
+    <updated>2017-11-17T00:35:10.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo-쉽게-시작하기"><a href="#hexo-쉽게-시작하기" class="headerlink" title="hexo 쉽게 시작하기"></a>hexo 쉽게 시작하기</h2><p>매일 블로그를 쓰는 게 아니어서, 매번 쓰기 전 찾아봐서 한번 간략하게 정리한다.</p><p>시작 전 github blog 를 사용할 수 있게 <code>_config.yml</code> 에 설정을 해줘야 한다.</p><p><code>hexo-deployer-git</code> 도 설치해야 한다.</p><p><a href="https://hexo.io/docs/deployment.html#Git" target="_blank" rel="external">https://hexo.io/docs/deployment.html#Git</a></p><h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><ol><li><p>Draft 생성</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new draft &lt;post_name&gt;</div></pre></td></tr></table></figure><p> post_name 은 영어로 작성하자. 그래야 url 이나 파일명이 깔끔하다. 띄어쓰기는 <code>-</code> (hyphen) 으로 구분한다.</p><p> 추후에 draft 들어와서 title을 한글로 바꿔주자.</p></li><li><p>Publish</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish &lt;post_name&gt;</div></pre></td></tr></table></figure><p> publish 이름에서 알 수 있듯, draft를 post 로 이동하는 것이다.</p><p> <code>_drafts</code> 에 있던 문서는 <code>_posts</code> 하위로 이동한다.</p></li><li><p>정적 파일 (HTML) 생성</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line"></div><div class="line"><span class="comment"># 무엇인가 잘못되면</span></div><div class="line"><span class="comment"># hexo clean 을 한번 해보자.</span></div></pre></td></tr></table></figure></li><li><p>Deploy</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure><p> 생성 한 정적 파일을 remote repository 에 올린다.</p></li></ol>]]></content>
     
@@ -35,29 +59,7 @@
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>P 태그의 공백 다루기</title>
-    <link href="http://kangsanChang.github.io/2017/11/14/p-tag-new-line/"/>
-    <id>http://kangsanChang.github.io/2017/11/14/p-tag-new-line/</id>
-    <published>2017-11-14T01:22:09.000Z</published>
-    <updated>2017-11-14T01:26:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>&lt;p&gt;</code> tag 를 사용하다보면, 개행이나 탭 사용 시 원하는대로 문자가 안 들어간다.</p><p><code>&lt;pre&gt;</code> tag 를 이용하면 탭이나 개행을 그대로 출력해주긴 하지만, 엘리먼트의 크기에 맞춰서 글씨가 자동으로 개행되지(text wrapping) 않는다. 글씨 길이 그대로 출력한다.</p><p>위와 같이 문자열의 개행, 탭, text wrapping 같은 것을 다루는 속성이 white-space 이다.</p><p>내가 원하는 모양으로 출력하기 위해선 개행도 잘 먹고 해당 엘리먼트 크기에 글씨의 길이가 자동으로 맞춰져서 개행(text wrapping)하는 것이었는데 <code>pre-wrap</code> 을 사용하면 됐다.</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// css 사용하는 예</span></div><div class="line"><span class="selector-tag">p</span> &#123;</div><div class="line"><span class="attribute">white-space</span>: pre-wrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>이런식으로 사용하면 된다.</p><p>개행/ 공백, tab / text wrapping</p><p>에 따라 다양한 white-space 속성을 사용할 수 있다. 아래에서 확인하자</p><p>Refs: <a href="https://developer.mozilla.org/ko/docs/Web/CSS/white-space" target="_blank" rel="external">https://developer.mozilla.org/ko/docs/Web/CSS/white-space</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; tag 를 사용하다보면, 개행이나 탭 사용 시 원하는대로 문자가 안 들어간다.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; tag 를 이용하면 탭이나 개행을 그대로 출력해주긴 하지만, 엘리먼트
-      
-    
-    </summary>
-    
-    
-      <category term="HTML" scheme="http://kangsanChang.github.io/tags/HTML/"/>
+      <category term="Hexo" scheme="http://kangsanChang.github.io/tags/Hexo/"/>
     
   </entry>
   
