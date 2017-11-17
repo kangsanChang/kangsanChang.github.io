@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kangsanChang.github.io/"/>
-  <updated>2017-11-14T01:26:14.000Z</updated>
+  <updated>2017-11-17T00:25:46.000Z</updated>
   <id>http://kangsanChang.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 간단 사용법</title>
+    <link href="http://kangsanChang.github.io/2017/11/17/hexo-simple-start/"/>
+    <id>http://kangsanChang.github.io/2017/11/17/hexo-simple-start/</id>
+    <published>2017-11-17T00:25:46.000Z</published>
+    <updated>2017-11-17T00:25:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo-쉽게-시작하기"><a href="#hexo-쉽게-시작하기" class="headerlink" title="hexo 쉽게 시작하기"></a>hexo 쉽게 시작하기</h2><p>매일 블로그를 쓰는 게 아니어서, 매번 쓰기 전 찾아봐서 한번 간략하게 정리한다.</p><p>시작 전 github blog 를 사용할 수 있게 <code>_config.yml</code> 에 설정을 해줘야 한다.</p><p><code>hexo-deployer-git</code> 도 설치해야 한다.</p><p><a href="https://hexo.io/docs/deployment.html#Git" target="_blank" rel="external">https://hexo.io/docs/deployment.html#Git</a></p><h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><ol><li><p>Draft 생성</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new draft &lt;post_name&gt;</div></pre></td></tr></table></figure><p> post_name 은 영어로 작성하자. 그래야 url 이나 파일명이 깔끔하다. 띄어쓰기는 <code>-</code> (hyphen) 으로 구분한다.</p><p> 추후에 draft 들어와서 title을 한글로 바꿔주자.</p></li><li><p>Publish</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish &lt;post_name&gt;</div></pre></td></tr></table></figure><p> publish 이름에서 알 수 있듯, draft를 post 로 이동하는 것이다.</p><p> <code>_drafts</code> 에 있던 문서는 <code>_posts</code> 하위로 이동한다.</p></li><li><p>정적 파일 (HTML) 생성</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line"></div><div class="line"><span class="comment"># 무엇인가 잘못되면</span></div><div class="line"><span class="comment"># hexo clean 을 한번 해보자.</span></div></pre></td></tr></table></figure></li><li><p>Deploy</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure><p> 생성 한 정적 파일을 remote repository 에 올린다.</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;hexo-쉽게-시작하기&quot;&gt;&lt;a href=&quot;#hexo-쉽게-시작하기&quot; class=&quot;headerlink&quot; title=&quot;hexo 쉽게 시작하기&quot;&gt;&lt;/a&gt;hexo 쉽게 시작하기&lt;/h2&gt;&lt;p&gt;매일 블로그를 쓰는 게 아니어서, 매번 쓰기 전 찾아봐
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>P 태그의 공백 다루기</title>

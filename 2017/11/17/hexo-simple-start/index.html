@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> hexo 간단 사용법 · ksdev</title><meta name="description" content="hexo 간단 사용법 - kangsan Chang"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://kangsanChang.github.io/atom.xml" title="ksdev"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/kangsanChang" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">hexo 간단 사용법</h1><div class="post-info">Nov 17, 2017</div><div class="post-content"><h2 id="hexo-쉽게-시작하기"><a href="#hexo-쉽게-시작하기" class="headerlink" title="hexo 쉽게 시작하기"></a>hexo 쉽게 시작하기</h2><p>매일 블로그를 쓰는 게 아니어서, 매번 쓰기 전 찾아봐서 한번 간략하게 정리한다.</p>
+<p>시작 전 github blog 를 사용할 수 있게 <code>_config.yml</code> 에 설정을 해줘야 한다.</p>
+<p><code>hexo-deployer-git</code> 도 설치해야 한다.</p>
+<p><a href="https://hexo.io/docs/deployment.html#Git" target="_blank" rel="external">https://hexo.io/docs/deployment.html#Git</a></p>
+<h2 id="사용법"><a href="#사용법" class="headerlink" title="사용법"></a>사용법</h2><ol>
+<li><p>Draft 생성</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new draft &lt;post_name&gt;</div></pre></td></tr></table></figure>
+<p> post_name 은 영어로 작성하자. 그래야 url 이나 파일명이 깔끔하다. 띄어쓰기는 <code>-</code> (hyphen) 으로 구분한다.</p>
+<p> 추후에 draft 들어와서 title을 한글로 바꿔주자.</p>
+</li>
+<li><p>Publish</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo publish &lt;post_name&gt;</div></pre></td></tr></table></figure>
+<p> publish 이름에서 알 수 있듯, draft를 post 로 이동하는 것이다.</p>
+<p> <code>_drafts</code> 에 있던 문서는 <code>_posts</code> 하위로 이동한다.</p>
+</li>
+<li><p>정적 파일 (HTML) 생성</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line"></div><div class="line"><span class="comment"># 무엇인가 잘못되면</span></div><div class="line"><span class="comment"># hexo clean 을 한번 해보자.</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Deploy</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy</div></pre></td></tr></table></figure>
+<p> 생성 한 정적 파일을 remote repository 에 올린다.</p>
+</li>
+</ol>
+</div></article></div></main><footer><div class="paginator"><a href="/2017/11/14/p-tag-new-line/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'kangsan';
+var disqus_identifier = '2017/11/17/hexo-simple-start/';
+var disqus_title = 'hexo 간단 사용법';
+var disqus_url = 'http://kangsanChang.github.io/2017/11/17/hexo-simple-start/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//kangsan.disqus.com/count.js" async></script><div class="copyright"><p>© 2017 <a href="http://kangsanChang.github.io">kangsan Chang</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-101490403-1",'auto');ga('send','pageview');</script></body></html>
