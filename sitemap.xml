@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://kangsanChang.github.io/2017/11/20/recaptcha-with-vue/</loc>
+    
+    <lastmod>2017-11-20T04:34:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://kangsanChang.github.io/2017/09/18/hexo-server-error/</loc>
+    
+    <lastmod>2017-11-17T02:35:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://kangsanChang.github.io/2017/11/17/p-tag-white-space/</loc>
     
     <lastmod>2017-11-17T00:55:48.000Z</lastmod>
@@ -12,13 +26,6 @@
     <loc>http://kangsanChang.github.io/2017/11/17/hexo-simple-start/</loc>
     
     <lastmod>2017-11-17T00:35:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://kangsanChang.github.io/2017/09/18/hexo-server-error/</loc>
-    
-    <lastmod>2017-11-14T01:04:26.000Z</lastmod>
     
   </url>
   
